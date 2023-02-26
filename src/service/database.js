@@ -1,3 +1,4 @@
+require('dotenv').config();
 const apiKey = process.env.VUE_APP_API_KEY;
 const apiBaseUrl = "https://api.themoviedb.org/3/";
 
