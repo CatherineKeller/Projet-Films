@@ -1,35 +1,20 @@
-# films
+# Projet films : fetch TMDB API avec Vue.js et Vite
 
-This template should help get you started developing with Vue 3 in Vite.
+Utilisation de l'API TMDB pour afficher une __recherche de films__ et les dernières __tendances de la semaine__.
 
-## Recommended IDE Setup
+![VueJs](https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vue.js&logoColor=4FC08D)
+![Vite](https://img.shields.io/badge/vite-636cff?style=for-the-badge&logo=vite&logoColor=white)
+![SASS](https://img.shields.io/badge/sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
 
-## Customize configuration
+## Site en ligne
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+[Voir le site](https://films.herokuapp.com/)
 
-## Project Setup
+
+## Pour lancer le projet
 
 ```sh
 npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
 npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
 ```
