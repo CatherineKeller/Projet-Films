@@ -33,7 +33,7 @@
                 class="search-movie"
                 v-show="movie.title && movie.poster_path"
               >
-                <a v-bind:href="'/films/' + movie.id">
+                <router-link :to="'/films/' + movie.id">
                   <img
                     v-if="movie.poster_path"
                     :src="
@@ -43,7 +43,18 @@
                   <p class="search-title">
                     {{ movie.title }}
                   </p>
-                </a>
+                </router-link>
+                <!-- <a v-bind:href="'/films/' + movie.id">
+                  <img
+                    v-if="movie.poster_path"
+                    :src="
+                      'https://image.tmdb.org/t/p/w500/' + movie.poster_path
+                    "
+                  />
+                  <p class="search-title">
+                    {{ movie.title }}
+                  </p>
+                </a> -->
               </div>
             </template>
           </div>

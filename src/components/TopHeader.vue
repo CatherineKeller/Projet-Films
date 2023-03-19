@@ -14,8 +14,9 @@ import { RouterLink } from "vue-router";
           height="26"
         />
       </RouterLink>
-      <nav>
+      <nav class="flex">
         <RouterLink to="/">Accueil</RouterLink>
+        <RouterLink to="/tendances">Tendances</RouterLink>
       </nav>
     </div>
   </header>
@@ -25,5 +26,8 @@ import { RouterLink } from "vue-router";
 .header {
   background-color: #666666;
   color: white;
+  & nav {
+    gap: 1rem;
+  }
 }
 </style>
