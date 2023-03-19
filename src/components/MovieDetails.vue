@@ -51,6 +51,10 @@ import MovieCasting from "./movie/MovieCasting.vue";
 import { ChevronLeftIcon } from "@heroicons/vue/24/solid";
 
 export default {
+  props: {
+    id: { type: Number, required: true}
+  },
+
   components: {
     RouterLink,
     MovieCasting,
@@ -69,9 +73,9 @@ export default {
   },
 
   computed: {
-    id() {
-      return this.$route.params.id;
-    },
+    // id() {
+    //   return parseInt(this.$route.params.id);
+    // },
     listGenres() {
       return this.movie.genres.map((genre) => genre.name);
     },
