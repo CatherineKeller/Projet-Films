@@ -12,7 +12,7 @@
               :key="movie.id"
               class="trends-movie"
             >
-              <a v-bind:href="'/films/' + movie.id">
+              <router-link :to="'/films/' + movie.id">
                 <img
                   v-if="movie.poster_path"
                   :src="'https://image.tmdb.org/t/p/w500/' + movie.poster_path"
@@ -20,7 +20,7 @@
                 <p class="trends-title">
                   {{ movie.title }}
                 </p>
-              </a>
+              </router-link>
             </div>
           </div>
         </template>

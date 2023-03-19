@@ -23,6 +23,11 @@ const router = createRouter({
       component: () => import("@/views/FilmDetailsView.vue"),
       props: route=> ({id: parseInt(route.params.id, 10)}),
     },
+    { 
+      path: '/:pathMatch(.*)*',
+      name: 'NotFound',
+      component: () => import("@/views/NotFoundView.vue"),
+    },
   ],
   scrollBehavior(to, from, savedPosition) {
     if (savedPosition) {
